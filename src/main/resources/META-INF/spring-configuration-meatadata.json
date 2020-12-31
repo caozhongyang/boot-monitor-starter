@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name": "monitor",
+      "type": "turingcao.cn.bootmonitorstarter.config.MoniterProperties",
+      "sourceType": "turingcao.cn.bootmonitorstarter.config.MoniterProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "monitor.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用",
+      "sourceType": "turingcao.cn.bootmonitorstarter.config.MoniterProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "monitor.target",
+      "type": "java.util.List",
+      "description": "监控指标[cpu, mem, hDisk, sql, http, thread]",
+      "sourceType": "turingcao.cn.bootmonitorstarter.config.MoniterProperties"
+    }
+  ],
+  "hints": [
+    {
+      "name": "monitor.enable",
+      "values":[
+        {
+          "value": true,
+          "description": "启动监控服务器数据"
+        },
+        {
+          "value": false,
+          "description": "禁用监控服务器数据"
+        }
+      ]
+    }
+  ]
+}
